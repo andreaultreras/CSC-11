@@ -1,3 +1,5 @@
+//this program has the LED flash on and off. if the button is pressed when the LED is on it keeps that LED on
+//and turns on the next LED. That LED will blink to, if it is pressed when on it will stay on
 .equ INPUT,0
 .equ OUTPUT, 1
 .equ LOW, 0
