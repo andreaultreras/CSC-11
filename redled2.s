@@ -1,17 +1,10 @@
-/*
-	turns on red LED, make its blink for 10 seconds then turns off
-*/
+//urns on red LED, make its blink for 10 seconds then turns off
 //RED LED FLASHING!!!! :))))))
 .equ INPUT, 0
 .equ OUTPUT, 1
 .equ LOW, 0
 .equ HIGH, 1
 .equ PIN, 29 
-
-.align 4
-.section .rodata
-test: .asciz " R2 = %d "
-led: .asciz " LED on. "
 
 .text
 .global main
@@ -31,10 +24,6 @@ while_loop:
 	cmp r5, #5
 	blge end_while_loop	
 
-	ldr r0, =test
-	mov r1, r5
-	bl printf
-	
 	mov r0, #PIN
 	mov r1, #LOW
 	bl digitalWrite
