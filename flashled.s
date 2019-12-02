@@ -1,7 +1,3 @@
-/*
-	does it matter which bcm we use
-	how do we set it up physically
-*/
 //RED LED FLASHING!!!! :))))))
 .equ INPUT, 0
 .equ OUTPUT, 1
