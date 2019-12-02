@@ -1,3 +1,4 @@
+//ignore, uncompleted project
 .equ INPUT, 0
 .equ OUTPUT, 1	//turns on LED
 .equ LOW, 0	//turns off LED
