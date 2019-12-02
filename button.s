@@ -1,3 +1,4 @@
+//This program tells you the LED is on when the buttton is pressed and off when it is not.
 .equ INPUT, 0
 .equ OUTPUT, 1
 .equ LOW, 0
