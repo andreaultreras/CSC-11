@@ -224,4 +224,9 @@ end_program:
 
 	mov r0, #0
 	pop {pc}
-
+/*
+//can try something like this instead of the delay
+mov r0, #0
+bl time
+mov r4, r0
+*/
