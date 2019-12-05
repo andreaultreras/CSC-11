@@ -282,6 +282,19 @@ loop:
 	b loop 
 	
 end_program:
+	//turns off all LEDs
+	mov r0, #RED_LED
+	mov r1, #LOW
+	bl digitalWrite
+	
+	mov r0, #YELLOW_LED
+	mov r1, #LOW
+	bl digitalWrite
+	
+	mov r0, #GREEN_LED
+	mov r1, #LOW
+	bl digitalWrite
+	
 	mov r0, #0
 	pop {pc}
 
