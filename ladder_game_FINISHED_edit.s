@@ -1,4 +1,4 @@
-// g++ ladder_game.s -lwiringPi -g -o ladder_game
+// g++ ladder_game_edit.s -lwiringPi -g -o ladder_game_edit
 .equ INPUT,0
 .equ OUTPUT, 1
 .equ LOW, 0
