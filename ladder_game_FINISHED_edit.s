@@ -54,7 +54,7 @@ next:
 	bl digitalWrite
 
 	//DELAYS NECESSARY INBETWEEN VOLTAGES
-	ldr r0, =#1000
+	ldr r0, =#750
 	bl delay
 
 	mov r0, #BUTTON
@@ -63,7 +63,7 @@ next:
 	bne then	 //not equal, go to
 	beq end_while_loop
 	
-	ldr r0, =#1000
+	ldr r0, =#500
 	bl delay
 
 then:
@@ -71,7 +71,7 @@ then:
 	mov r1, #LOW
 	bl digitalWrite
 
-	ldr r0, =#1000
+	ldr r0, =#750
 	bl delay
 
 	mov r0, #BUTTON
@@ -234,48 +234,48 @@ win:
 	mov r8, #0
 loop:
 	cmp r8, #5
-	blge end_loop	
+	blge end_program	
 
 	mov r0, #RED_LED
 	mov r1, #HIGH
 	bl digitalWrite
 	
-	ldr r0, =#250
+	ldr r0, =#100
 	bl delay
 	
 	mov r0, #YELLOW_LED
 	mov r1, #HIGH
 	bl digitalWrite
 	
-	ldr r0, =#250
+	ldr r0, =#100
 	bl delay	
  
 	mov r0, #GREEN_LED
 	mov r1, #HIGH
 	bl digitalWrite
 	
-	ldr r0, =#250
+	ldr r0, =#100
 	bl delay
 
 	mov r0, #RED_LED
 	mov r1, #LOW
 	bl digitalWrite
 	 
-	ldr r0, =#250
+	ldr r0, =#100
 	bl delay
 	 
 	mov r0, #YELLOW_LED
 	mov r1, #LOW
 	bl digitalWrite
 	
-	ldr r0, =#250
+	ldr r0, =#100
 	bl delay	
  
 	mov r0, #GREEN_LED
 	mov r1, #LOW
 	bl digitalWrite
 	
-	ldr r0, =#250
+	ldr r0, =#100
 	bl delay
 
 	add r8, #1
@@ -294,7 +294,6 @@ end_program:
 	mov r0, #GREEN_LED
 	mov r1, #LOW
 	bl digitalWrite
-	
+
 	mov r0, #0
 	pop {pc}
-
